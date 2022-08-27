@@ -1,0 +1,15 @@
+     <%- include('./partials/head') %> 
+<body>
+	<%- include('./partials/header') %> 
+	<h1>Login</h1>
+	<form action="/admin">
+        <div class="mb-3">
+          <label for="user" class="form-label">Nombre</label>
+          <input type="text" class="form-control" name="user" id="user" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+	<%- include('./partials/footer') %> 
+</body>
+</html>
+
