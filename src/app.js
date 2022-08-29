@@ -5,6 +5,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 
+
 // ************ express() - (don't touch) ************
 const app = express();
 
@@ -14,6 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
+
+
 
 // ************ Template Engine - (don't touch) ************SETEO DE LA VISTA
 app.set('view engine', 'ejs');

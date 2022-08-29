@@ -1,0 +1,58 @@
+     <%- include('./partials/head') %> 
+<body>
+	<%- include('./partials/header') %> 
+
+	<main class="register__main">
+		<section class="register__main__container">
+			<h1>REGÍSTRATE</h1>
+			<div class="register__main__container__text">
+				<p>¿Ya tienes un perfil personal?</p>
+				<a href="/usuario/login">Iniciar Sesión</a>
+			</div>
+			<form class="form_div" action="/admin" method="post">
+				<div>
+					<label for="">Nombre</label>
+					<input type="text" id="name" name="name"/>
+				</div>
+				
+            <div>
+				<label for="">Apellido</label>
+				<Input type="text" id="lasname" name="lastname">
+			</div>	
+			
+			<div>
+				<label for="">Email</label>
+				<input type="email" placeholder="miEmail@correo.com" name="email" />
+
+			</div>
+				
+			<div>
+				<label for="">Contraseña</label>
+				<input type="password" placeholder="************" name="password" />
+			</div>
+				
+              <div>
+				<label for="">Repetir contraseña</label>
+				<input type="password" placeholder="************" name="repassword" />
+			  </div>
+				
+			 <div>
+				<label for="terms">Acepto terminos y condiciones</label>
+                <input type="checkbox" id="terms" name="terms"> 
+			</div>
+				
+
+				
+				<button class="registrarse__button" type="submit">Registrarse</button>
+		</section>
+</main>
+	<%- include('./partials/footer') %> 
+</body>
+</html>
+
+
+
+
+
+
+
